@@ -134,7 +134,7 @@ function checkAnswer(selectedAnswer) {
         //HIDE THE MODAL
         modal.style.display = "none";
         //ADD THE 2 SECOND WAIT BACK ON TO THE TIMER
-        currentTimer = currentTimer + 2;
+        currentTimer = currentTimer + 1;
         //SEE IF I HAVE RUN OUT OF QUESTIONS
         if (randomQuestion.length > 0 && currentTimer > 0) {
             runQuestion();
@@ -142,7 +142,7 @@ function checkAnswer(selectedAnswer) {
             clearInterval(timerInterval);
             endQuiz();
         }
-    }, 2000);
+    }, 1000);
 }
 
 function endQuiz() {
