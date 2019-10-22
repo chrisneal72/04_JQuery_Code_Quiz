@@ -1,0 +1,296 @@
+body{
+    background-image: url("../images/bg.jpg");
+}
+
+p {
+    text-align: center;
+    color: #777777;
+    font-size: 16px;
+}
+
+h1 {
+    color: lightslategrey;
+    font-size: 32px;
+}
+
+h2 {
+    color: lightslategrey;
+    font-size: 24px;
+}
+
+h3 {
+    color: lightslategrey;
+    font-size: 18px;
+}
+
+.body-container {
+    background: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 90vh;
+    padding: 30px;
+    border-radius: 25px;
+    max-width: 800px;
+}
+
+.header-row-main {
+    position: relative;
+    text-align: center;
+    color: #777777;
+    font-size: 16px;
+    border: 3px dashed lightslategrey;
+    border-radius: 25px;
+    height: 80vh;
+}
+
+.header-row-questions {
+    position: relative;
+    text-align: center;
+    color: #777777;
+    font-size: 16px;
+    border: 3px dashed lightslategrey;
+    border-radius: 25px;
+    height: 80vh;
+}
+
+.answer-row {
+    text-align: center;
+    color: #777777;
+    font-size: 16px;
+    border: 3px dashed lightslategrey;
+    border-radius: 25px;
+    height: 45vh;
+}
+
+.header-row-score {
+    position: relative;
+    text-align: center;
+    color: #777777;
+    font-size: 16px;
+    border: 3px dashed lightslategrey;
+    border-radius: 25px;
+    height: 80vh;
+}
+
+.header-row-high-score {
+    position: relative;
+    text-align: center;
+    color: #777777;
+    font-size: 16px;
+    border: 3px dashed lightslategrey;
+    border-radius: 25px;
+    height: 80vh;
+}
+
+.header-row-f {
+    position: relative;
+    text-align: center;
+    color: #777777;
+    font-size: 16px;
+    border: 3px dashed lightslategrey;
+    border-radius: 25px;
+    height: 50vh;
+}
+
+.answer-row-f {
+    text-align: center;
+    color: #777777;
+    font-size: 16px;
+    border: 3px dashed lightslategrey;
+    border-radius: 25px;
+}
+
+.timerDiv{
+    position: absolute;
+    width: 100px;
+    right: 0px;
+    top: 0px;
+    text-align: left;
+    color: #777777;
+    font-size: 16px;
+    border-left: 1px dashed lightslategrey;
+    border-bottom: 1px dashed lightslategrey;
+    border-radius: 0px 0px 0px 15px;
+}
+
+.qTrackerDiv{
+    position: absolute;
+    width: 150px;
+    left: 0px;
+    top: 0px;
+    text-align: left;
+    color: #777777;
+    font-size: 16px;
+    border-right: 1px dashed lightslategrey;
+    border-bottom: 1px dashed lightslategrey;
+    border-radius: 0px 0px 15px 0px;
+}
+}
+
+.small-text-leftside {
+    text-align: right;
+    color: black;
+    font-size: 10px;
+}
+
+.small-text-rightside {
+    text-align: left;
+    color: black;
+    font-size: 10px;
+}
+
+.hr {
+    background-color: lightslategrey;
+    height: 2px;
+}
+
+.btn {
+    background-color: #4aaaa5;
+    color: #fff;
+    width: 50%;
+    border-radius: 15px;
+    margin: 10px 20px 10px 20px;
+}
+
+.btn-sm {
+    width: 150px;
+}
+
+.btn:hover {
+    background-color: #214d4a;
+    color: #fff;
+    box-shadow: 0px 0px 20px 1px #4aaaa5;
+}
+
+.btn:focus {
+    background-color: #c50000;
+    color: #fff;
+    box-shadow: 0px 0px 20px 1px #4aaaa5;
+}
+
+.btn:active {
+    background-color: #c50000;
+    color: #fff;
+}
+
+.disabled {
+    filter: brightness(0.8) blur(3px);
+    opacity: .5;
+}
+
+.boarder {
+    border: 1px solid black;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.left-right {
+    text-align: right;
+}
+
+ /* The Modal (background) */
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background: none;
+    margin: auto;
+    padding: 0;
+    /* border: 1px solid #888; */
+    border-style: none;
+    width: 40%;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4aaaa5;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #214d4a;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #214d4a;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.choices-col {
+    text-align: right;
+}
+
+.switches-col {
+    font-size: 10px;
+    text-align: left;
+}
